@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function() {
             for (let i = 0; i < operators.length; i++) {
                 if (operators[i] === '+' || operators[i] === '-') {
                     // For addition and subtraction, results less than 500
-                    if (parseFloat(numbers[i]) < 500 && parseFloat(numbers[i + 1]) < 500) {
+                    if (parseFloat(numbers[i]) < 100 && parseFloat(numbers[i + 1]) < 100) {
                         return true; // Easy
                     }
                 } else if (operators[i] === '*' || operators[i] === '/') {
